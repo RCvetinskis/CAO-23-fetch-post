@@ -1,0 +1,48 @@
+nav {
+    margin-top: -10px;
+    background-color: #48cae4;
+    padding: 10px;
+}
+
+
+nav  ul{
+    margin:  10px 20px;
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+   
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #ffff;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
+nav a:hover{
+    color: #caf0f8;
+    font-size: 1.8em;
+}
+
+
+
+nav a::before {
+    position: absolute;
+    content: "";
+    left: 105%;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    background-color: #ffff;
+   opacity: 0;
+   transition: transform 0.3s;
+}
+nav a:hover::before {
+    transform: translate(-105%);
+    opacity: 1;
+}
