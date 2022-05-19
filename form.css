@@ -14,10 +14,10 @@ h1{
 .container{
     display: flex;
     justify-content: center;
+   
 }
 
 form input {
-  
     border: none;
     border-radius: 8px;
     padding: 15px;
@@ -26,6 +26,8 @@ form input {
     color:  #00afb9;
     background-color: white;
     transition: 0.3s;
+    outline: none;
+     
 }
 
 form input::placeholder{
@@ -42,3 +44,21 @@ form input::placeholder{
    padding: 30px;
 }
 
+@media(max-width:760px){
+    form input {
+         margin: 20px;
+        display: flex;
+        grid-gap: 30px;
+   
+    }
+    .submit {
+        width: 337px;
+      
+    }
+    .submit:hover{
+      margin-left: 20px;
+       padding: 15px;
+      background-color: #00afb9 ;
+      color:#ffff;
+    }
+}

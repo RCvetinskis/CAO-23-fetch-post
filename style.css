@@ -14,13 +14,14 @@ h1{
 }
  table{
    border-collapse:collapse;
-   width: 800px;
+   width: 1200px;
    max-width: 760px;
    margin: auto;
    text-align: center;
    background-color: #48cae4;
 }
 table th,td{
+    width: 300px;
     border: 3px solid #00bbf9;
     font-weight: 800;
     font-size: 1.3em;
@@ -33,4 +34,12 @@ th{
 }
 td{
     color: #ffff;
+}
+
+
+@media(max-width:760px){
+    table {
+   
+      width: 360px;
+    }
 }

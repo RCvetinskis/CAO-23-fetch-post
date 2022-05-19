@@ -1,3 +1,5 @@
+
+
 nav {
     margin-top: -10px;
     background-color: #48cae4;
@@ -45,4 +47,10 @@ nav a::before {
 nav a:hover::before {
     transform: translate(-105%);
     opacity: 1;
+}
+
+@media(max-width:760px){
+    header {
+     max-width: 760px;
+    }
 }
